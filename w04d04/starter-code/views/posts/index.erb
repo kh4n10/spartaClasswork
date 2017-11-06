@@ -1,0 +1,11 @@
+
+	<h1>Welcome to the homepage!</h1>
+
+<!-- The ice cream cone runs the ruby functions -->
+	<% @posts.each do |post| %>
+		<div>
+			<h3><a href="/<%= post[:id] %>"><%= post[:title] %></a></h3>
+			<h4><%= post[:body] %></h4>
+		</div>
+	<% end %>
+

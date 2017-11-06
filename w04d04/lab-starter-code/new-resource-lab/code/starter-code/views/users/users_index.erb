@@ -1,0 +1,8 @@
+<h1>Welcome to the Users homepage</h1>
+<h2>Current Users</h2>
+
+<% @users.each do |user| %>
+<div>
+  <h3><a href="/users/<%= user[:id] %>"><%= user[:first_name] %></a></h3>
+</div>
+<% end %>
